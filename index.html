@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WWII Shooting Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.min.js"></script>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background-color: #1a202c;
+      color: #f7fafc;
+    }
+    #game-container {
+      margin: auto;
+      max-width: 960px;
+      height: 600px;
+      border: 2px solid #4a5568;
+      background: url('https://cdn.pixabay.com/photo/2016/11/29/03/53/war-1869236_1280.jpg') no-repeat center center;
+      background-size: cover;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mx-auto p-4">
+    <h1 class="text-4xl font-bold mb-4 text-center">WWII Shooting Game</h1>
+    <div id="game-container"></div>
+    <div id="ui" class="mt-4 text-center">
+      <button id="startBtn" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Start Game
+      </button>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
